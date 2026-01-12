@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cognix Agency | AI & Marketing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              navy: {
+                900: '#0a1d37',
+                800: '#0f2a43',
+                950: '#051124',
+                700: '#1a3b5c', // Lighter navy for hover states
+              },
+              primary: {
+                DEFAULT: '#2563eb', // Blue 600
+                glow: '#60a5fa', // Blue 400
+              }
+            },
+            animation: {
+              'blob': 'blob 7s infinite',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script>
+      // Apply theme immediately to prevent flashing
+      (function() {
+        const theme = localStorage.getItem('theme') || 'system';
+        if (theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155; 
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569; 
+      }
+
+      /* Utilities */
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .dark .glass-panel {
+        background: rgba(15, 23, 42, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      
+      .bg-grid-slate-100 {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+      }
+      .dark .bg-grid-slate-900 {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%231e293b'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+        mask-image: linear-gradient(to bottom, transparent, black, transparent);
+      }
+    </style>
+    <!-- Calendly widget script -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
+    "firebase/": "https://esm.sh/firebase@^12.7.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white dark:bg-navy-950 text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden transition-colors duration-300 selection:bg-blue-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
