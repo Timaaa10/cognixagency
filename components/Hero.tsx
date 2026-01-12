@@ -67,7 +67,7 @@ const Hero: React.FC<HeroProps> = ({ onBookClick, onAuditClick }) => {
             onClick={onAuditClick}
             className="w-full sm:w-auto inline-flex justify-center items-center px-10 py-5 text-xl font-bold text-[#0a1d37] dark:text-white bg-white/70 dark:bg-navy-900/50 backdrop-blur-md border-2 border-slate-200 dark:border-navy-700 rounded-2xl hover:bg-white dark:hover:bg-navy-800 transition-all hover:-translate-y-1.5 shadow-lg border-none cursor-pointer"
           >
-            Get Free Audit
+            Get Free AI Audit
           </button>
         </div>
 
