@@ -113,8 +113,6 @@ const App: React.FC = () => {
         onTermsClick={() => navigateTo('terms')} 
       />
 
-      <FloatingChatWidget onBookClick={handleBookClick} />
-
       {isBookingModalOpen && (
         <CalendlyModal onClose={() => setIsBookingModalOpen(false)} />
       )}
