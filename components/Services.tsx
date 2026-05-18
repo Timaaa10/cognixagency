@@ -59,7 +59,7 @@ const Services: React.FC<ServicesProps> = ({ onBookClick }) => {
               onClick={onBookClick}
               className="w-full py-5 text-base font-black text-white bg-[#0a1d37] dark:bg-navy-800 rounded-2xl hover:bg-slate-800 dark:hover:bg-navy-700 transition-all duration-300 flex items-center justify-center group/btn"
             >
-              Get a free strategy call
+              Book a call
               <svg className="ml-2 w-5 h-5 transform transition-transform group-hover/btn:translate-x-1 rotate-[-45deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </button>
           </div>
@@ -104,7 +104,7 @@ const Services: React.FC<ServicesProps> = ({ onBookClick }) => {
               className="relative w-full py-5 text-base font-black text-white bg-blue-600 rounded-2xl hover:bg-blue-700 transition-all duration-300 shadow-xl shadow-blue-600/20 hover:-translate-y-1 flex items-center justify-center overflow-hidden group/btn"
             >
               <span className="relative z-10 flex items-center">
-                Get a free strategy call
+                Book a call
                 <svg className="ml-2 w-5 h-5 transform transition-transform group-hover/btn:translate-x-1 rotate-[-45deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700"></div>
@@ -145,7 +145,7 @@ const Services: React.FC<ServicesProps> = ({ onBookClick }) => {
               onClick={onBookClick}
               className="w-full py-5 text-base font-black text-white bg-[#0a1d37] dark:bg-navy-800 rounded-2xl hover:bg-slate-800 dark:hover:bg-navy-700 transition-all duration-300 flex items-center justify-center group/btn"
             >
-              Get a free strategy call
+              Book a call
               <svg className="ml-2 w-5 h-5 transform transition-transform group-hover/btn:translate-x-1 rotate-[-45deg]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </button>
           </div>
